@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Bienvenue chez THP Gossip Land</title>
+  </head>
+  <body>
+  <% if (1..Gossip.all.length).include? id %>
+    <h2>Voici le gossip n°<%=id%> </h2>
+    <br/>
+    <h3> L'auteur du gossip est : </h3>
+    <p><%= gossip.author %> </p>
+    <br/> 
+    <h3> Le gossip est le suivant : </h3>
+    <p> <%= gossip.content %> </p>
+  <% end %>
+  </body>
+  
+</html>
